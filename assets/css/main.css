@@ -563,3 +563,11 @@ p {
 #headerwrap p {
     color: #fff;
 }
+
+.header-alert {
+    display: block;
+}
+
+#mc-form {
+    margin-top: 35px;
+}

@@ -73,12 +73,19 @@
 	<!-- WELCOME SECTION -->
     <div class="container">
       <div class="row mt">
-      	<div class="col-lg-8">
+      	<div class="col-lg-7">
 	        <h1>Device to monitor and manage asthma</h1>
 	        <p>User blows into the device as hard as they can and it displays their airway codition.</p>
       	</div>
-      	<div class="col-lg-4">
-      		<p class="pull-right"><br><button type="button" class="btn btn-green">Start Your Project Now</button></p>
+      	<div class="col-lg-5">
+                    <form id="mc-form" class="form-inline pull-right">
+                        <label class="header-alert" for="mc-email"></label>
+                        <div class="form-group">
+
+                            <input id="mc-email" size="35" type="email" class="form-control" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit" class="btn btn-green">To know more!</button>
+                    </form>
       	</div>
       </div><!-- /row -->
     </div><!-- /.container -->
@@ -240,5 +247,11 @@
 			viewportFactor : 0.2
 		} );
 	</script>
+          <script src="assets/js/jquery-ajaxchimp-master/jquery.ajaxchimp.min.js"></script>
+    <script type="text/javascript">
+    $('#mc-form').ajaxChimp({
+        url: 'http://breathcount.us9.list-manage.com/subscribe/post?u=b9f97ae81e7519541e3a18ac1&amp;id=bad327fb50'
+    });
+    </script>
   </body>
 </html>
