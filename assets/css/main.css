@@ -209,13 +209,12 @@ hr {
     transition: all .1s ease-in-out;
 }
 #headerwrap {
-    background: url(../img/header-bg1.jpg) no-repeat center top;
-    margin-top: -10px;
+    margin-top: -20px;
     padding-top: 20px;
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 750px;
+    min-height: 740px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -244,7 +243,7 @@ hr {
     color: #fff;
 }
 #headerwrap .spacer {
-    margin-top: 220px;
+    margin-top: 170px;
 }
 #mapwrap {
     margin: 0;
@@ -382,10 +381,11 @@ hr {
 #call {
     background: #2f2f2f;
     padding-top: 35px;
+    color: #fff;
     padding-bottom: 35px;
     text-align: center;
 }
-#call h3 {
+#call h1,h2,h3,h4 {
     color: #fff;
 }
 #call p {
@@ -571,3 +571,38 @@ p {
 #mc-form {
     margin-top: 35px;
 }
+
+
+
+.green {
+    background: #1abc9c;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #fff;
+}
+
+.btn-white {
+    color: #1abc9c;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 300;
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white:active, .btn-white.active, .open .dropdown-toggle.btn-white {
+    color: #16a085;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 300;
+}
+.video-section .pattern-overlay {
+background-color: rgba(26, 188, 156, 0.59);
+padding: 110px 0 32px;
+min-height: 496px;
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}

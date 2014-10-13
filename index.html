@@ -22,6 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -66,12 +67,15 @@
 	</nav>
 
 	<!-- MAIN IMAGE SECTION -->
-	<div id="headerwrap">
+	<div >
+    <section id="headerwrap" class="content-section video-section">
+      <div class="pattern-overlay">
+      <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=KAFgB0lQQWw',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h1>breath+</h1>
-					<h2>Monitoring your lungs</h2>
+					<h2>Lung health monitoring device</h2>
                     <p>It  is like <em>heart rate monitor</em> but for your lungs </p>
 					<div class="spacer"></div>
 					<i class="fa fa-angle-down"></i>
@@ -79,13 +83,15 @@
 			</div><!-- row -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
+        </section>
+      </div>
 
 	<!-- WELCOME SECTION -->
     <div class="container">
       <div class="row mt">
       	<div class="col-lg-7">
 	        <h1>Device to monitor and manage asthma</h1>
-	        <p>User blows into the device as hard as they can and it displays their airway codition.</p>
+	        <p>User blows into the device as hard as they can and it sends data to a smartphone. From there it can be viewed compared and even shared.</p>
       	</div>
       	<div class="col-lg-5">
                     <form id="mc-form" class="form-inline pull-right">
@@ -107,7 +113,7 @@
 		<div class="container">
 			<div class="row mt">
 				<div class="col-lg-1 centered">
-					<i class="fa fa-certificate"></i>
+					<i class="fa fa-coffee"></i>
 				</div>
 				<div class="col-lg-3">
 					<h3>Free of care</h3>
@@ -115,7 +121,7 @@
 				</div>
 
 				<div class="col-lg-1 centered">
-					<i class="fa fa-question-circle"></i>
+					<i class="fa fa-star"></i>
 				</div>
 				<div class="col-lg-3">
 					<h3>Parents' dream</h3>
@@ -124,7 +130,7 @@
 
 
 				<div class="col-lg-1 centered">
-					<i class="fa fa-globe"></i>
+					<i class="fa fa-smile-o"></i>
 				</div>
 				<div class="col-lg-3">
 					<h3>Desinged for users</h3>
@@ -159,23 +165,44 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>-->
 
 
 	<!-- CALL TO ACTION -->
-<!--
 	<div id="call">
 		<div class="container">
 			<div class="row">
-				<h3>THIS IS A CALL TO ACTION AREA</h3>
+				<h3>Current state</h3>
 				<div class="col-lg-8 col-lg-offset-2">
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-					<p><button type="button" class="btn btn-green btn-lg">Call To Action Button</button></p>
+					<p>We have created a working prototype!</p>
+                    <img id="prototype" class="img-responsive" src="assets/img/prototype.png">
+                    <em>It mesures peak exosstion and sends it to a desktop via USB</em>
+					<p><button type="button" class="btn btn-green btn-lg">Call To Actio</button></p>
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 
+	<div class="green">
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                <h3 class="text-left">We are looking for...</h3>
+                    <ul>
+                        <li>Help with organising finasing for this project</li>
+                        <li>Help with meating legal requerments in process of becoming a medical device</li>
+                        <li>Help with leagal process of patenting the idea</li>
+                    </ul>
+                    <br>
+                    <div class="text-center">
+                        <p>If you are or know what we are loking for:</p>
+                        <a href="mailto:info@segfoltas.lt"><button type="button" class="btn btn-white btn-lg">Contact US</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="container">
 		<div class="row mt">
 			<div class="col-lg-12">
@@ -256,6 +283,15 @@
 	<script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/classie.js"></script>
 	<script src="assets/js/AnimOnScroll.js"></script>
+    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".player").mb_YTPlayer();
+
+    });
+    </script>
 	<script>
 		new AnimOnScroll( document.getElementById( 'grid' ), {
 			minDuration : 0.4,
