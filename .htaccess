@@ -4,5 +4,4 @@ Redirect /fb https://www.facebook.com/pages/Breathcount/642704245848031
 Redirect /facebook https://www.facebook.com/pages/Breathcount/642704245848031
 Redirect /twitter https://twitter.com/breathcountcom
 Redirect /skype skype:breathcount?chat
-Redirect /alpha https://www.dropbox.com/s/iph9gp2jb26ki4w/feedback-betaDebug-SNAPSHOT.apk?dl=1
-
+Redirect /alpha https://play.google.com/apps/testing/lt.segfoltas.breathcount.alpha
