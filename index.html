@@ -140,7 +140,7 @@
 			</div><!-- col-lg-12 -->
     			<div class="col-lg-3 vertical-center">
                     <br/><br/><br/><br/><br/>
-                    <a href="https://play.google.com/store/apps/details?id=lt.segfoltas.breathcount" target="_blank">
+                    <a id="android-store" href="https://play.google.com/store/apps/details?id=lt.segfoltas.breathcount" target="_blank">
 				        <img src="./assets/img/en-play-badge.png" style="max-width: 200px;" alt="Breathcount on Google Play">
                     </a>
 			</div><!-- col-lg-12 -->
@@ -400,6 +400,11 @@
     <script type="text/javascript">
     $('#mc-form').ajaxChimp({
         url: 'http://breathcount.us9.list-manage.com/subscribe/post?u=b9f97ae81e7519541e3a18ac1&amp;id=bad327fb50'
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#android-store", "Google play store link", {
+        "referrer": document.referrer
     });
     </script>
   </body>
