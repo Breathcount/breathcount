@@ -209,7 +209,7 @@
 
                             <input id="mc-email" size="35" type="email" class="form-control" placeholder="Enter your email address">
                         </div>
-                        <button type="submit" class="btn btn-green">To know more!</button>
+                        <button id="mail-chimp" type="submit" class="btn btn-green">To know more!</button>
                     </form>
       	</div>
       </div><!-- /row -->
@@ -306,7 +306,7 @@
 	<section id="contact"></section>
 	<div id="sf">
 		<div class="container">
-			<div class="row">
+			<div id="social-media" class="row">
 				<div class="col-lg-4 dg">
                     <a href="https://www.facebook.com/pages/Breathcount/642704245848031">
 					<h4 class="ml">FACEBOOK</h4>
@@ -404,6 +404,16 @@
     </script>
     <script type="text/javascript">
     mixpanel.track_links("#android-store", "Google play store link", {
+        "referrer": document.referrer
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#mail-chimp", "Mail chimp sub", {
+        "referrer": document.referrer
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#social-media div  a", "Social media links", {
         "referrer": document.referrer
     });
     </script>
