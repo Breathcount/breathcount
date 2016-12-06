@@ -40,7 +40,11 @@
     <![endif]-->
 
     <script src="assets/js/modernizr.custom.js"></script>
-
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+    mixpanel.init("32fbd7eaf84b81b0a168396a861b98b4");</script>
+    <!-- end Mixpanel -->
   </head>
 
   <body>
@@ -136,7 +140,7 @@
 			</div><!-- col-lg-12 -->
     			<div class="col-lg-3 vertical-center">
                     <br/><br/><br/><br/><br/>
-                    <a href="https://play.google.com/store/apps/details?id=lt.segfoltas.breathcount" target="_blank">
+                    <a id="android-store" href="https://play.google.com/store/apps/details?id=lt.segfoltas.breathcount" target="_blank">
 				        <img src="./assets/img/en-play-badge.png" style="max-width: 200px;" alt="Breathcount on Google Play">
                     </a>
 			</div><!-- col-lg-12 -->
@@ -205,7 +209,7 @@
 
                             <input id="mc-email" size="35" type="email" class="form-control" placeholder="Enter your email address">
                         </div>
-                        <button type="submit" class="btn btn-green">To know more!</button>
+                        <button id="mail-chimp" type="submit" class="btn btn-green">To know more!</button>
                     </form>
       	</div>
       </div><!-- /row -->
@@ -302,7 +306,7 @@
 	<section id="contact"></section>
 	<div id="sf">
 		<div class="container">
-			<div class="row">
+			<div id="social-media" class="row">
 				<div class="col-lg-4 dg">
                     <a href="https://www.facebook.com/pages/Breathcount/642704245848031">
 					<h4 class="ml">FACEBOOK</h4>
@@ -379,6 +383,12 @@
 
     });
     </script>
+    <script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+	  analytics.load("0iSjgQHd5ytfrZIEIwxKrAZ5uxvlVUUA");
+	  analytics.page()
+	  }}();
+	</script>
 	<script>
 		new AnimOnScroll( document.getElementById( 'grid' ), {
 			minDuration : 0.4,
@@ -390,6 +400,21 @@
     <script type="text/javascript">
     $('#mc-form').ajaxChimp({
         url: 'http://breathcount.us9.list-manage.com/subscribe/post?u=b9f97ae81e7519541e3a18ac1&amp;id=bad327fb50'
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#android-store", "Google play store link", {
+        "referrer": document.referrer
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#mail-chimp", "Mail chimp sub", {
+        "referrer": document.referrer
+    });
+    </script>
+    <script type="text/javascript">
+    mixpanel.track_links("#social-media div  a", "Social media links", {
+        "referrer": document.referrer
     });
     </script>
   </body>
