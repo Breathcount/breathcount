@@ -45,15 +45,27 @@
     for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
     mixpanel.init("32fbd7eaf84b81b0a168396a861b98b4");</script>
     <!-- end Mixpanel -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-	<script src="assets/js/masonry.pkgd.min.js"></script>
-	<script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/classie.js"></script>
-	<script src="assets/js/AnimOnScroll.js"></script>
-    <script src="assets/js/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/js/jquery-ajaxchimp-master/jquery.ajaxchimp.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/imagesloaded.js"></script>
+    <script type="text/javascript" src="assets/js/classie.js"></script>
+	<script type="text/javascript" src="assets/js/AnimOnScroll.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ajaxchimp-master/jquery.ajaxchimp.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".player").mb_YTPlayer();
+        $('.carousel').carousel({
+          interval: 2000
+        });
+	    $("#mc-form").ajaxChimp({
+	        url: 'http://breathcount.us11.list-manage.com/subscribe/post?u=742a0bb4e9a7c1826746bafa8&amp;id=ec8adc0575'
+	    });
+    });
+    </script>
 
   </head>
 
@@ -376,18 +388,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
 
-    <script type="text/javascript">
-    $(document).ready(function () {
 
-        $(".player").mb_YTPlayer();
-        $('.carousel').carousel({
-          interval: 2000
-        });
-	    $("#mc-form").ajaxChimp({
-	        url: 'http://breathcount.us11.list-manage.com/subscribe/post?u=742a0bb4e9a7c1826746bafa8&amp;id=ec8adc0575'
-	    });
-    });
-    </script>
     <script type="text/javascript">
 	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
 	  analytics.load("0iSjgQHd5ytfrZIEIwxKrAZ5uxvlVUUA");
@@ -401,9 +402,7 @@
 			viewportFactor : 0.2
 		} );
 	</script>
-    <script type="text/javascript">
 
-    </script>
     <script type="text/javascript">
     mixpanel.track_links("#android-store", "Google play store link", {
         "referrer": document.referrer
