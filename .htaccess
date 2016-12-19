@@ -10,4 +10,4 @@ Redirect /deck-investors https://drive.google.com/file/d/0B9_gwv2sp82keHRPeFlmdH
 Redirect /video https://youtu.be/5sywiidGeGo
 Redirect /phone tel:+37062356228
 Redirect /call tel:+37062356228
-Redirect /share-summary mailto:name1@mail.com,name2@mail.com?cc=povilas@breathcount.com&subject=Breathcount%20intro&body=Hi
+Redirect /share-summary mailto:name1@mail.com,name2@mail.com?cc=povilas@breathcount.com&subject=Breathcount%20intro
