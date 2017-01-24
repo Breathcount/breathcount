@@ -14,3 +14,4 @@ Redirect /share-summary mailto:name1@mail.com,name2@mail.com?cc=povilas@breathco
 Redirect /chat https://calendly.com/povilas/chat/01-23-2017
 Redirect /early-access https://calendly.com/povilas/early-access
 Redirect /ankstyva-prieiga https://calendly.com/povilas/early-access
+Redirect /android https://play.google.com/store/apps/details?id=lt.segfoltas.breathcount&referrer=utm_source%3DDirect%26utm_medium%3DDirect%2520domain%2520shortlink
